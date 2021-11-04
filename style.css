@@ -110,6 +110,10 @@ a {
   color: white;
 }
 
+.text-tgrey {
+  color: grey;
+}
+
 .text-tblue {
   color: #2F80ED;
 }
@@ -576,6 +580,9 @@ h3 {
 .bg-ef {
   background-color: #efefef;
 }
+.bg-fa {
+  background-color: #fafafa;
+}
 
 .border {
   border: 1px solid #dcdcdc;
@@ -881,4 +888,14 @@ input[type="checkbox"] {
   color: white;
 }
 
+#navbar {
+  z-index: 999;
+}
 
+.cta-caption {
+  color: a0a0a0;
+  font-size: 10px;
+  margin:  0;
+  padding:  0;
+  margin-top: 8px;
+}
