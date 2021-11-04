@@ -889,7 +889,7 @@ input[type="checkbox"] {
 }
 
 #navbar {
-  z-index: 999;
+  z-index: 2;
 }
 
 .cta-caption {
@@ -898,4 +898,30 @@ input[type="checkbox"] {
   margin:  0;
   padding:  0;
   margin-top: 8px;
+}
+
+#modal-section {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0,0,0,0.8);
+  z-index: 3;
+}
+
+#modal-section video {
+  width: 80vw;
+  max-height: 80vh;
+  margin-top: 10vh;
+  margin-left: 10vw;
+}
+
+#modal-section.open {
+  display: inherit;
+}
+
+body.modal-open {
+  overflow: hidden;
 }
