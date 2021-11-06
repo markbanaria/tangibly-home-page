@@ -900,6 +900,20 @@ input[type="checkbox"] {
   margin-top: 8px;
 }
 
+.input-with-button button{
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+
+}
+
+.input-with-button input{
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+
+}
+
 #modal-section {
   display: none;
   position: fixed;
