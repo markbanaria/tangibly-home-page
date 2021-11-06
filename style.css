@@ -914,6 +914,10 @@ input[type="checkbox"] {
 
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 #modal-section {
   display: none;
   position: fixed;

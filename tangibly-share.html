@@ -40,8 +40,8 @@
           <span><strong>TANGIBLY</strong></span>
           <span class="text-tblue">SHARE</span> 
         </div>
-        <div class="col-12 pt40 font-24 text-center" style="padding-bottom: 160px">
-          Play the Video 
+        <div class="col-12 pt40 font-21 text-center" style="padding-bottom: 150px">
+          <a onclick="videoOpen()" class="cursor-pointer">Play the Video &nbsp;<i class="zmdi zmdi-play-circle-outline"></i></a>
         </div>
       </div>
     </div>
@@ -106,4 +106,29 @@
       </div>      
     </div>
   </section>
+
+  <section id="modal-section">
+    <video controls class="video-player" id="main-video">
+      <source src="assets/videos/video-1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <i class="font-24 text-white zmdi zmdi-close" style="vertical-align: top; margin-top: 10vh; margin-left:8px" onclick="videoClose()"></i>
+  </section>
+
 </body>
+
+<script type="text/javascript">
+  videoOpen = function () {
+    $('#modal-section').addClass('open')
+    a = $('#main-video')[0].play()
+    $('body').addClass('modal-open')
+  }
+
+  videoClose = function () {
+    $('body').removeClass('modal-open')
+    $('#modal-section').removeClass('open')
+    $('#main-video')[0].pause()
+    $('#main-video')[0].currentTime = 0
+  }
+  
+</script>
