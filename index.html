@@ -36,9 +36,26 @@
   <section class="bg-white">
     <div class="container">
       <div class="row">
-        <div class="col-12 mt80 pt32 font-64 text-center">
-          Trade secret lawsuits have <br>
-          increased 40% since 2016 
+        <div class="col-12 mt80 pt32 font-64 text-center" style="margin-left: -100px;">
+          Manage Your Trade Secrets 
+            <span class="inline-block roller">
+              <span style="visibility: hidden">
+                 a
+              </span>
+              <span class="rolled">
+                <span class="print text-tpurple">Easily</span>
+              </span>
+              <span class="rolled rolled-under">
+                <span class="print text-tblue">Consistently</span>
+              </span>
+              <span class="rolled rolled-under">
+                <span class="print text-tindigo">Defensibly</span>
+              </span>
+              <span class="rolled rolled-under">
+                <span class="print text-tpurple">Enforcibly</span>
+              </span> 
+            </span>
+            <br>
         </div>
         <div class="col-12 pt40 font-21 text-center" style="padding-bottom: 150px">
           <a onclick="videoOpen()" class="cursor-pointer">Play the Video &nbsp;<i class="zmdi zmdi-play-circle-outline"></i></a>
@@ -172,5 +189,16 @@
     $('#main-video')[0].pause()
     $('#main-video')[0].currentTime = 0
   }
+
+  ctr=0
+
+  setInterval(function(){
+    if(ctr==4) { ctr = 0 }
+    $( ".rolled" ).eq((ctr + 1) % 4).removeClass('rolled-over').removeClass('rolled-under')
+    $( ".rolled" ).eq((ctr + 2) % 4).removeClass('rolled-over')
+    $( ".rolled" ).eq((ctr + 3) % 4).removeClass('rolled-over').addClass('rolled-under')
+    $( ".rolled" ).eq(ctr).addClass('rolled-over')
+    ctr+=1
+  }, 3000);
   
 </script>

@@ -943,3 +943,37 @@ input[type="checkbox"] {
 body.modal-open {
   overflow: hidden;
 }
+
+.roller {
+  position: relative;
+}
+
+.rolled {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.rolled,
+.rolled .print{
+    display: inline-block;
+    transition: all 0.2s ease-in-out;
+    transform-origin: bottom left;
+    opacity: 1;
+}
+
+.rolled .print {
+  position: absolute;
+}
+
+.rolled-under .print {
+  transform: translateY(0px); 
+  transform: scaleY(0);
+  opacity: 0;
+}
+
+.rolled-over .print {
+  transform: translateY(-72px); 
+  transform: scaleY(0);
+  opacity: 0;
+}
