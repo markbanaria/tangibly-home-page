@@ -967,13 +967,13 @@ body.modal-open {
 }
 
 .rolled-under .print {
-  transform: translateY(0px); 
-  transform: scaleY(0);
+  transform: translateY(72px); 
+  transform: scaleY(1);
   opacity: 0;
 }
 
 .rolled-over .print {
   transform: translateY(-72px); 
-  transform: scaleY(0);
+  transform: scaleY(1);
   opacity: 0;
 }
