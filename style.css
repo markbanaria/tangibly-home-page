@@ -830,6 +830,10 @@ input[type="checkbox"] {
   background: #2F0E8D;
 }
 
+.bg-tgrey {
+  background: grey;
+}
+
 .border-left {
   border-left: 1px solid #dcdcdc;
 }
@@ -976,4 +980,30 @@ body.modal-open {
   transform: translateY(-72px); 
   transform: scaleY(1);
   opacity: 0;
+}
+
+.video-tile {
+  position: relative;
+  cursor: pointer;
+}
+
+.video-tile .video-thumb {
+  height: 200px;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.video-tile .video-play-mask {
+  height: 200px;
+  background-color: rgba(0,0,0,0.3);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.3s linear;
+}
+
+.video-tile:hover .video-play-mask {
+  opacity: 1;
 }

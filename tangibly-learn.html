@@ -2,15 +2,14 @@
 <html lang="en">
 
 <head>
-  <title>Tangibly Share</title>
+  <title>Tangibly Learn</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <!-- <script type="text/javascript" src="pa-app.js"></script> -->
-
+  <script type="text/javascript" src="video-player.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="fonts.css">
@@ -38,10 +37,10 @@
       <div class="row">
         <div class="col-12 pt64 font-72 text-center text-display">
           <span><strong>TANGIBLY</strong></span>
-          <span class="text-tindigo">MANAGE</span> 
+          <span class="text-tgrey">LEARN</span> 
         </div>
-        <div class="col-12 pt40 font-24 text-center" style="padding-bottom: 160px">
-          Play the Video 
+        <div class="col-12 pt40 font-21 text-center" style="padding-bottom: 150px">
+          <!-- <a onclick="videoOpen()" class="cursor-pointer font-21">Play the Video &nbsp;<i class="zmdi zmdi-play-circle-outline"></i></a> -->
         </div>
       </div>
     </div>
@@ -52,30 +51,41 @@
         <div class="col-md-6 mb64">
           <div class="box-shadow-lg bg-white border-radius-xl">  
             <div class="p32 pb16 text-copy-1 d-flex flex-row">
-              <div class="font-21 pr16">
-                <i class="text-tindigo zmdi zmdi-tag"></i>
-              </div>
-              <div class="font-16"><strong class="text-tindigo">Label your assets</strong> as trade secret</div>
-            </div>
-            <div class="pl32 pr32 pb16 text-copy-1 d-flex flex-row">
-              <div class="font-21 pr16">
-                <i class="text-tindigo zmdi zmdi-accounts-list"></i>
-              </div>
-              <div class="font-16"><strong class="text-tindigo">Limit access </strong>on a need to know basis</div>
-            </div>
-            <div class="pl32 pr32 text-copy-1 d-flex flex-row">
-              <div class="font-21 pr16">
-                <i class="text-tindigo zmdi zmdi-info-outline"></i>
-              </div>
-              <div class="font-16"><strong class="text-tindigo">Inform</strong> employees and partners they have access to the company's trade secrets</div>
+              <div class="font-16 text-center"><strong class="text-copy-2">White label our training videos with your law firm or company’s logo and contact information</strong></div>
             </div>
             <div class="p32">
-              <button class="btn text-white bg-tindigo w-100">
-                Book a Demo
-              </button>
+              <div class="input-with-button d-flex flex-row">
+                <input class="border flex-fill pl16" type="text" placeholder="Enter your Email" name=""> 
+                <button class="btn text-tgrey bg-gray-3"><i class="zmdi zmdi-arrow-right"></i></button>
+              </div>
+              <p class="cta-caption text-center">Access is free, just enter your email</p>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="row mb32" id="video-list">
+        <div class="col-md-4">
+          <div class="video-tile border border-radius">
+            <div class="video-thumb" style="background-image: url(&#39;assets/images/thumbs/learn-thumb-1.png&#39;);">
+            </div>
+            <div class="video-play-mask d-flex flex-column text-center">
+              <div class="flex-fill"></div>
+              <i class="zmdi zmdi-play text-white font-64"></i>
+              <div class="flex-fill"></div>
+            </div>
+            <div class="p16">
+              <p class="mb8"><strong>What is a Trade Secret?</strong></p>
+              <p class="text-copy-1">Learn the three basic criteria to protect an asset as a trade secret.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 mb32 text-copy-0"><center>All Videos are Copyright of Tangibly</center></div>
       </div>
     </div>
   </section>
@@ -106,4 +116,70 @@
       </div>      
     </div>
   </section>
+  <section id="modal-section">
+    <video controls class="video-player" id="main-video">
+      <source src="assets/videos/video-1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <i class="font-24 text-white zmdi zmdi-close" style="vertical-align: top; margin-top: 10vh; margin-left:8px" onclick="videoClose()"></i>
+  </section>
 </body>
+
+<script type="text/javascript">
+  var videoIndex = [
+    {
+      title: 'What is a Trade Secret?',
+      desc: 'Learn the three basic criteria to protect an asset as a trade secret.',
+      src: 'learn-video-1.mp4',
+      thumb: 'learn-thumb-1.png',
+    },
+    {
+      title: 'Examples of Trade Secrets',
+      desc: 'Trade secrets come in all shapes and sizes.  Learn how to spot them.',
+      src: 'learn-video-2.mp4',
+      thumb: 'learn-thumb-2.png',
+    },
+    {
+      title: 'Examples of Trade Secrets',
+      desc: 'Trade secrets come in all shapes and sizes.  Learn how to spot them.',
+      src: 'learn-video-2.mp4',
+      thumb: 'learn-thumb-2.png',
+    },
+    {
+      title: 'Examples of Trade Secrets',
+      desc: 'Trade secrets come in all shapes and sizes.  Learn how to spot them.',
+      src: 'learn-video-2.mp4',
+      thumb: 'learn-thumb-2.png',
+    },
+    {
+      title: 'Examples of Trade Secrets',
+      desc: 'Trade secrets come in all shapes and sizes.  Learn how to spot them.',
+      src: 'learn-video-2.mp4',
+      thumb: 'learn-thumb-2.png',
+    },
+    {
+      title: 'Examples of Trade Secrets',
+      desc: 'Trade secrets come in all shapes and sizes.  Learn how to spot them.',
+      src: 'learn-video-2.mp4',
+      thumb: 'learn-thumb-2.png',
+    },
+    {
+      title: 'Examples of Trade Secrets',
+      desc: 'Trade secrets come in all shapes and sizes.  Learn how to spot them.',
+      src: 'learn-video-2.mp4',
+      thumb: 'learn-thumb-2.png',
+    },
+    {
+      title: 'Examples of Trade Secrets',
+      desc: 'Trade secrets come in all shapes and sizes.  Learn how to spot them.',
+      src: 'learn-video-2.mp4',
+      thumb: 'learn-thumb-2.png',
+    }
+  ];
+  aa=[];
+  for(i=0;i<videoIndex.length;i++) {
+    a = '<div class="col-md-4"><div class="mb32 video-tile border border-radius" onclick="videoOpen(&#39;' + videoIndex[i].src + '&#39;)"><div class="video-thumb" style="background-image: url(&#39;assets/images/thumbs/' + videoIndex[i].thumb + '&#39;);"></div><div class="video-play-mask d-flex flex-column text-center"><div class="flex-fill"></div><i class="zmdi zmdi-play text-white font-64"></i><div class="flex-fill"></div></div><div class="p16"><p class="mb8"><strong>'+ videoIndex[i].title +'</strong></p><p class="text-copy-1">'+ videoIndex[i].desc +'</p></div></div></div>'
+    aa.push(a)
+  }
+  document.getElementById("video-list").innerHTML = aa 
+</script>
