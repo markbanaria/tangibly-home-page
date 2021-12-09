@@ -165,4 +165,5 @@
     aa = aa + '<div class="col-md-4"><div class="mb32 video-tile border border-radius" onclick="videoOpen(&#39;' + videoIndex[i].src + '&#39;)"><div class="video-thumb" style="background-image: url(&#39;assets/images/thumbs/' + videoIndex[i].thumb + '&#39;);"></div><div class="video-play-mask d-flex flex-column text-center"><div class="flex-fill"></div><i class="zmdi zmdi-play text-white font-64"></i><div class="flex-fill"></div></div><div class="p16"><p class="mb8 display-none"><strong>'+ videoIndex[i].title +'</strong></p><p class="text-copy-2">'+ videoIndex[i].desc +'</p></div></div></div>'
   }
   document.getElementById("video-list").innerHTML = aa 
+  window.history.pushState('', '', '/tangibly-learn');
 </script>
