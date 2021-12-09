@@ -53,17 +53,8 @@
             <div class="p32 pb16 text-copy-1 d-flex flex-row">
               <div class="font-16 text-center"><strong class="text-copy-2">White label our training videos with your law firm or company’s logo and contact information</strong></div>
             </div>
-            <div class="p32">
-              <div class="input-with-button">
-                <form class=" d-flex flex-row" action="https://formsubmit.co/markbanaria@gmail.com" method="POST">
-                  <input class="border flex-fill pl16" type="text" placeholder="Enter your Email" name="email"> 
-                  <input type="hidden" name="_next" class="display-none" value="https://www.tangibly.com/tangibly-learn-enabled.html">
-                  <input type="hidden" name="_subject" value="A Client is Interested in Tangibly Learn">
-                  <input type="hidden" name="_captcha" value="false">
-                  <button class="btn text-tgrey bg-gray-3" type="submit"><i class="zmdi zmdi-arrow-right"></i></button>
-                </form>
-              </div>
-              <p class="cta-caption text-center">Access is free, just enter your email</p>
+            <div class="p16 text-center font-14 text-copy-0">
+              <i class="zmdi zmdi-check-circle text-tgrey"></i> &nbsp; Your email has been submitted. You may now access Tangibly Learn
             </div>
           </div>
         </div>
@@ -72,7 +63,7 @@
   </section>
   <section>
     <div class="container">
-      <div class="row mb32" id="video-list">
+      <div class="row mb32" id="video-list enabled">
         <div class="col-md-4">
           <div class="video-tile border border-radius">
             <div class="video-thumb" style="background-image: url(&#39;assets/images/thumbs/learn-thumb-1.png&#39;);">
@@ -171,7 +162,7 @@
   ];
   aa='';
   for(i=0;i<videoIndex.length;i++) {
-    aa = aa + '<div class="col-md-4"><div class="mb32 video-tile border border-radius"><div class="video-thumb" style="background-image: url(&#39;assets/images/thumbs/' + videoIndex[i].thumb + '&#39;);"></div><div class="video-play-mask d-flex flex-column text-center"><div class="flex-fill"></div><i class="zmdi zmdi-play text-white font-64"></i><div class="flex-fill"></div></div><div class="p16"><p class="mb8 display-none"><strong>'+ videoIndex[i].title +'</strong></p><p class="text-copy-2">'+ videoIndex[i].desc +'</p></div></div></div>'
+    aa = aa + '<div class="col-md-4"><div class="mb32 video-tile border border-radius" onclick="videoOpen(&#39;' + videoIndex[i].src + '&#39;)"><div class="video-thumb" style="background-image: url(&#39;assets/images/thumbs/' + videoIndex[i].thumb + '&#39;);"></div><div class="video-play-mask d-flex flex-column text-center"><div class="flex-fill"></div><i class="zmdi zmdi-play text-white font-64"></i><div class="flex-fill"></div></div><div class="p16"><p class="mb8 display-none"><strong>'+ videoIndex[i].title +'</strong></p><p class="text-copy-2">'+ videoIndex[i].desc +'</p></div></div></div>'
   }
   document.getElementById("video-list").innerHTML = aa 
 </script>

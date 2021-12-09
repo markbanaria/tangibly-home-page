@@ -988,7 +988,12 @@ body.modal-open {
 
 .video-tile {
   position: relative;
+  opacity: 0.3;
+}
+
+.video-list.enabled .video-tile {
   cursor: pointer;
+  opacity: 1;
 }
 
 .video-tile .video-thumb {
@@ -996,6 +1001,9 @@ body.modal-open {
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
+}
+
+.video-list.enabled .video-tile .video-thumb {
 }
 
 .video-tile .video-play-mask {
@@ -1007,7 +1015,6 @@ body.modal-open {
   opacity: 0;
   transition: opacity 0.3s linear;
 }
-
-.video-tile:hover .video-play-mask {
+.video-list.enabled .video-tile:hover .video-play-mask {
   opacity: 1;
 }
