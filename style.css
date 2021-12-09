@@ -850,6 +850,10 @@ input[type="checkbox"] {
   height: 100vh;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 .comment-box {
   display: block;
   width: 100%;
