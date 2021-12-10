@@ -185,6 +185,11 @@ h3 {
   display: none;
 }
 
+
+.display-inline-block {
+  display: inline-block;
+}
+
 .m0 {
   margin: 0;
 }
@@ -559,6 +564,10 @@ h3 {
 
 .width-100 {
   width: 100%;
+}
+
+.w-24 {
+  width: 24px;
 }
 
 .inline-block {
