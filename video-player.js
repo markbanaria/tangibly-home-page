@@ -1,6 +1,6 @@
 videoOpen = function (video) {
   $('#main-video').remove()
-  $('#modal-section').prepend($('<video controls class="video-player" id="main-video"><source src="assets/videos/video-1.mp4" type="video/mp4">Your browser does not support the video tag.</video>'))
+  $('#modal-section').prepend($('<video controls class="video-player" id="main-video" controlsList="nodownload"><source src="assets/videos/video-1.mp4" type="video/mp4">Your browser does not support the video tag.</video>'))
   $('#main-video source').attr('src','assets/videos/' + video)
   $('#modal-section').addClass('open')
   a = $('#main-video')[0].play()
