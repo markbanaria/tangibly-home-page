@@ -37,7 +37,7 @@
   <section class=" bg-ef">
     <div class="container">
       <div class="row">
-        <div class="col-12 pt64 font-72 text-center text-display">
+        <div class="col-12 pt64  xs-font-32 font-72 text-center text-display">
           <span><strong>TANGIBLY</strong></span>
           <span class="text-tblue">SHARE</span> 
         </div>
@@ -108,11 +108,22 @@
   </section>
 
   <section id="modal-section">
-    <video controls class="video-player" id="main-video" controlsList="nodownload">
-      <source src="assets/videos/share-video-main.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <i class="font-24 text-white zmdi zmdi-close" style="vertical-align: top; margin-top: 10vh; margin-left:8px" onclick="videoClose()"></i>
+    <div class="d-flex flex-column video-modal-flex">
+      <div class="flex-fill"></div>
+      <div>
+        <center id="video-container">
+          <video controls class="video-player" id="main-video" controlsList="nodownload">
+            <source src="assets/videos/share-video-main.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div class="w-100 font-12 text-white p24 text-center video-close-button" onclick="videoClose()">
+            <i class="zmdi zmdi-close-circle"></i>
+            &nbsp;&nbsp;CLOSE VIDEO
+          </div>
+        </center>
+      </div>
+      <div class="flex-fill"></div>
+    </div>
   </section>
 
 </body>

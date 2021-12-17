@@ -302,6 +302,10 @@ h3 {
   margin-top: 64px;
 }
 
+.mt72 {
+  margin-top: 72px;
+}
+
 .mt80 {
   margin-top: 80px;
 }
@@ -947,10 +951,8 @@ input[type="checkbox"] {
 }
 
 #modal-section video {
-  width: 80vw;
+  max-width: 90vw;
   max-height: 80vh;
-  margin-top: 10vh;
-  margin-left: 10vw;
 }
 
 #modal-section.open {
@@ -995,6 +997,10 @@ body.modal-open {
   opacity: 0;
 }
 
+.rolling-banner-header {
+  margin-left: -100px;
+}
+
 .video-tile {
   position: relative;
   opacity: 0.3;
@@ -1026,4 +1032,66 @@ body.modal-open {
 }
 #video-list.enabled .video-tile:hover .video-play-mask {
   opacity: 1;
+}
+
+.xs-visible {
+  display: none;
+}
+
+.video-modal-flex {
+  height: 100vh;
+}
+
+.video-close-button {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.video-close-button:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 767px) {
+  .xs-mt40 {
+    margin-top:  40px;
+  }  
+
+  .xs-pt24 {
+    padding:  24px;
+  }
+
+  .xs-font-16 {
+    font-size: 16px;
+    line-height: 24px;
+  }  
+
+  .xs-font-24 {
+    font-size: 24px;
+    line-height: 32px;
+  }  
+
+  .xs-font-32 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .rolling-banner-header {
+    margin-left: 0px;
+  }
+
+  .xs-visible {
+    display: inherit;
+  }
+
+  #modal-section video {
+  max-width: 100vw;
+  max-height: 100vh;
+  }
+
+  .video-close-button {
+    opacity: 1;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 32px;
+  }
 }
