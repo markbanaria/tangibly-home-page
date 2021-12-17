@@ -1088,10 +1088,4 @@ body.modal-open {
   max-height: 100vh;
   }
 
-  .video-close-button {
-    opacity: 1;
-    position: absolute;
-    bottom: 0;
-    padding-bottom: 32px;
-  }
 }
