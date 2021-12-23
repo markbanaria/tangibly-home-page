@@ -118,6 +118,10 @@ a {
   color: #2F80ED;
 }
 
+.text-tteal {
+  color: #06CD9D;
+}
+
 .text-tpurple {
   color: #722ED1;
 }
@@ -185,6 +189,9 @@ h3 {
   display: none;
 }
 
+.opacity-50 {
+  opacity: 0.5;
+}
 
 .display-inline-block {
   display: inline-block;
@@ -597,6 +604,10 @@ h3 {
   background-color: #fafafa;
 }
 
+.bg-72 {
+  background-color: #727272;
+}
+
 .border {
   border: 1px solid #dcdcdc;
 }
@@ -789,6 +800,12 @@ input[type="checkbox"] {
   color: #202020;
 }
 
+.btn-ghost-tgrey {
+  background-color: transparent;
+  border: 2px solid grey;
+  color: grey;
+}
+
 .btn-ghost-white {
   background-color: transparent;
   border: 2px solid #ffffff;
@@ -833,6 +850,10 @@ input[type="checkbox"] {
 
 .bg-tblue {
   background: #2F80ED;
+}
+
+.bg-tteal {
+  background: #06CD9D;
 }
 
 .bg-tpurple {
@@ -1051,13 +1072,31 @@ body.modal-open {
   opacity: 1;
 }
 
+#sticky-footer .sticky-part {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
 @media screen and (max-width: 767px) {
+  .xs-p24 {
+    padding: 24px;
+  }
+
   .xs-mt40 {
     margin-top:  40px;
   }  
 
+  .xs-pt0 {
+    padding-top:  0px;
+  }
+
   .xs-pt24 {
-    padding:  24px;
+    padding-top:  24px;
+  }
+
+  .xs-pb24 {
+    padding-bottom: 24px;
   }
 
   .xs-font-16 {
@@ -1081,6 +1120,14 @@ body.modal-open {
 
   .xs-visible {
     display: inherit;
+  }
+
+  .xs-hidden {
+    display: none;
+  }
+
+  .xs-text-center {
+    text-align: center;
   }
 
   #modal-section video {
