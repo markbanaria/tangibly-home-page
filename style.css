@@ -822,6 +822,12 @@ input[type="checkbox"] {
   color: #ffffff;
 }
 
+.submit-email-button {
+  padding:  2px 24px;
+  font-size: 21px;
+  border-left: none;
+}
+
 .form-submit {
   padding-left: 48px;
   padding-right: 48px;
@@ -1027,7 +1033,7 @@ body.modal-open {
   opacity: 0.3;
 }
 
-#video-list.enabled .video-tile {
+.video-tile.enabled {
   cursor: pointer;
   opacity: 1;
 }
@@ -1039,7 +1045,7 @@ body.modal-open {
   background-repeat: no-repeat;
 }
 
-#video-list.enabled .video-tile .video-thumb {
+.video-tile.enabled .video-thumb {
 }
 
 .video-tile .video-play-mask {
@@ -1051,7 +1057,8 @@ body.modal-open {
   opacity: 0;
   transition: opacity 0.3s linear;
 }
-#video-list.enabled .video-tile:hover .video-play-mask {
+
+.video-tile.enabled:hover .video-play-mask {
   opacity: 1;
 }
 
@@ -1086,6 +1093,9 @@ body.modal-open {
   .xs-mt40 {
     margin-top:  40px;
   }  
+
+  .xs-mb16 {
+    margin-bottom: 16px;  }
 
   .xs-pt0 {
     padding-top:  0px;
@@ -1135,4 +1145,13 @@ body.modal-open {
   max-height: 100vh;
   }
 
+}
+
+@media screen and (min-width: 1200px) {
+  .xl-text-left {
+    text-align: left!important;
+  }
+  #rolling-banner-text {
+    margin-left:  6vw;
+  }
 }

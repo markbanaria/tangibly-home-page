@@ -46,7 +46,7 @@
   <section class="bg-white">
     <div class="container">
       <div class="row">
-        <div class="col-12 mt72 xs-mt40 pt32 font-56 xs-font-32 text-center">
+        <div id="rolling-banner-text" class="col-12 mt72 xs-mt40 pt32 font-56 xs-font-32 text-center xl-text-left">
           <span>Manage Your Trade Secrets</span>
           <span class="roller"><u>Easily</u></span>
           <br>
@@ -97,8 +97,8 @@
               <span class="text-tblue">SHARE</span>
             </div>    
             <div class="p32 xs-p24">
-              <p class="font-16 text-700">Trade secret protection requires confidentiality.</p>
-              <p class="pt8">Tangibly Share makes it easy to execute and track NDAs.</p>
+              <p class="font-16 text-700">Trade secret protection requires confidentiality</p>
+              <p class="pt8">Tangibly Share makes it easy to execute and track NDAs</p>
             </div>
             <div class="p32 xs-p24 xs-pt0 pt0">
               <a href="https://share-app.tangibly.com/reg" class="btn text-white bg-tblue w-100">
@@ -120,8 +120,8 @@
               <span class="text-tpurple">MANAGE</span>
             </div>    
             <div class="p32 xs-p24">
-              <p class="font-16 text-700">Trade secrets require active management.</p>
-              <p class="pt8">Tangibly Manage is all the best practices in a box.</p>
+              <p class="font-16 text-700">Trade secrets require active management</p>
+              <p class="pt8">Tangibly Manage is all the best practices in a box</p>
             </div>
             <div class="p32 xs-p24 xs-pt0 pt0">
               <a class="btn text-white bg-tpurple w-100" target="_blank" href="https://calendly.com/d/cg3-h22-93v/tangibly-demo?month=2021-12">
@@ -220,8 +220,8 @@
 
   var rollerText = ["<u>Easily</u>", "<u>Consistently</u>", "<u>Defensibly</u>", "<u>Enforcibly</u>"]
 
-  setInterval(function(){
-    if(ctr==4) { ctr = 0 }
+  var rollingTextInterval = setInterval(function(){
+    if(ctr==4) { ctr=0 }
     $( ".roller" ).html(rollerText[ctr])
     ctr+=1
   }, 3000);

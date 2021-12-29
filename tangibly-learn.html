@@ -41,20 +41,24 @@
       </div>
     </div>
   </section>
-  <section class=" bg-ef">
+  <section class="bg-ef pb32">
     <div class="container">
       <div class="row">
         <div class="col-12 pt64  xs-font-32 font-72 text-center text-display">
           <span><strong>TANGIBLY</strong></span>
           <span class="text-tgrey">LEARN</span> 
         </div>
-        <div class="col-12 pt40 font-21 text-center" style="padding-bottom: 150px">
+        <div class="col-12 pt24 xs-pt24 font-21 xs-font-16 text-center">
+          <div class="font-21 xs-font-16 ">
+            <span>Training is key to trade secret management</span></div>
+        </div>
+        <div class="col-12 pt40 font-21 text-center">
           <!-- <a onclick="videoOpen()" class="cursor-pointer font-21">Play the Video &nbsp;<i class="zmdi zmdi-play-circle-outline"></i></a> -->
         </div>
       </div>
     </div>
   </section>
-  <section style="margin-top: -88px;">
+  <section style="margin-top: -88px;" class="display-none">
     <div class="container">
       <div class="row justify-content-md-center">
         <div class="col-md-6 mb64">
@@ -79,9 +83,42 @@
       </div>
     </div>
   </section>
-  <section>
+  <section class="mt56">
     <div class="container">
-      <div class="row mb32" id="video-list">
+      <div class="row" id="video-list">
+        <div class="col-md-4">
+          <div class="video-tile border border-radius">
+            <div class="video-thumb" style="background-image: url(&#39;assets/images/thumbs/learn-thumb-1.png&#39;);">
+            </div>
+            <div class="video-play-mask d-flex flex-column text-center">
+              <div class="flex-fill"></div>
+              <i class="zmdi zmdi-play text-white font-64"></i>
+              <div class="flex-fill"></div>
+            </div>
+            <div class="p16">
+              <p class="mb8"><strong>What is a Trade Secret?</strong></p>
+              <p class="text-copy-1">Learn the three basic criteria to protect an asset as a trade secret.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb32">
+        <div class="col-12 col-xl-8 offset-xl-2 text-center">
+          <div class="bg-tblue p24 border-radius-xl text-white">
+            <div class="mb16 font-21">Enter your Email to unlock more videos</div>
+            <div class="input-with-button">
+              <form class=" d-flex flex-row" action="https://formsubmit.co/support@tangibly.com" method="POST">
+                <input class="border-white text-white flex-fill pl16 btn-ghost-white" type="text" placeholder="" name="email"> 
+                <input type="hidden" name="_next" class="display-none" value="https://www.tangibly.com/tangibly-learn-enabled.html">
+                <input type="hidden" name="_subject" value="A Client is Interested in Tangibly Learn">
+                <input type="hidden" name="_captcha" value="false">
+                <button class="btn btn-ghost-white text-white submit-email-button" type="submit"><i class="zmdi zmdi-arrow-right"></i></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb32" id="video-list-2">
         <div class="col-md-4">
           <div class="video-tile border border-radius">
             <div class="video-thumb" style="background-image: url(&#39;assets/images/thumbs/learn-thumb-1.png&#39;);">
@@ -100,6 +137,24 @@
       </div>
       <div class="row">
         <div class="col-12 mb32 text-copy-0"><center>All Videos are © 2021 Tangibly, Inc.</center></div>
+      </div>
+    </div>
+  </section>
+  <section class="border-top bg-fa pt40 pb40">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <h1 class="font-40 mt40 xs-mb16">
+          Use our videos to market 
+          <br>your law firm
+          </h1>
+          <p class="mt24 mb32">To learn more about white labelling, please 
+          <a href="mailto:support@tangibly.com"><u>contact us</u></a>
+          </p>
+      </div>
+      <div class="col-12 col-md-6">
+        <img src="assets/images/whitelist-videos.png" class="w-100">
+      </div>
       </div>
     </div>
   </section>
@@ -190,8 +245,13 @@
     }
   ];
   aa='';
-  for(i=0;i<videoIndex.length;i++) {
-    aa = aa + '<div class="col-md-4"><div class="mb32 video-tile border border-radius"><div class="video-thumb" style="background-image: url(&#39;assets/images/thumbs/' + videoIndex[i].thumb + '&#39;);"></div><div class="video-play-mask d-flex flex-column text-center"><div class="flex-fill"></div><i class="zmdi zmdi-play text-white font-64"></i><div class="flex-fill"></div></div><div class="p16"><p class="mb8 display-none"><strong>'+ videoIndex[i].title +'</strong></p><p class="text-copy-2">'+ videoIndex[i].desc +'</p></div></div></div>'
+  bb='';
+  for(i=0;i<videoIndex.length-3;i++) {
+    aa = aa + '<div class="col-md-4"><div class="mb32 video-tile enabled border border-radius" onclick="videoOpen(&#39;' + videoIndex[i].src + '&#39;)"><div class="video-thumb" style="background-image: url(&#39;assets/images/thumbs/' + videoIndex[i].thumb + '&#39;);"></div><div class="video-play-mask d-flex flex-column text-center"><div class="flex-fill"></div><i class="zmdi zmdi-play text-white font-64"></i><div class="flex-fill"></div></div><div class="p16"><p class="mb8 display-none"><strong>'+ videoIndex[i].title +'</strong></p><p class="text-copy-2">'+ videoIndex[i].desc +'</p></div></div></div>'
+  }
+  for(i=3;i<videoIndex.length;i++) {
+    bb = bb + '<div class="col-md-4"><div class="mb32 video-tile border border-radius"><div class="video-thumb" style="background-image: url(&#39;assets/images/thumbs/' + videoIndex[i].thumb + '&#39;);"></div><div class="video-play-mask d-flex flex-column text-center"><div class="flex-fill"></div><i class="zmdi zmdi-play text-white font-64"></i><div class="flex-fill"></div></div><div class="p16"><p class="mb8 display-none"><strong>'+ videoIndex[i].title +'</strong></p><p class="text-copy-2">'+ videoIndex[i].desc +'</p></div></div></div>'
   }
   document.getElementById("video-list").innerHTML = aa 
+  document.getElementById("video-list-2").innerHTML = bb 
 </script>
