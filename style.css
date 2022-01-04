@@ -800,6 +800,12 @@ input[type="checkbox"] {
   color: #202020;
 }
 
+.btn-ghost-blue {
+  background-color: transparent;
+  border: 1px solid #2F80ED;
+  color: #2F80ED;
+}
+
 .btn-ghost-tgrey {
   background-color: transparent;
   border: 2px solid grey;
