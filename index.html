@@ -24,6 +24,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="fonts.css">
+  <script type="text/javascript" src="insightsContent.js"></script>
+  <script type="text/javascript" src="insights.js"></script>
 </head>
 
 <body class="bg-fa">
@@ -137,6 +139,17 @@
       </div>
     </div>
   </section>
+  <section class="bg-white">
+    <div class="container pb64">
+      <div class="row">
+        <div class="col-12 mt64 mb24 font-32">
+          <center>The Latest from Tangibly</center>
+        </div>
+      </div>
+      <div class="row" id="insights-container">
+      </div>
+    </div>
+  </section>
   <section class="bg-ef pb32" id="footer">
     <div class="container">
       <div class="row pt48">
@@ -225,5 +238,7 @@
     $( ".roller" ).html(rollerText[ctr])
     ctr+=1
   }, 3000);
+
+  generateInsights('some');
   
 </script>

@@ -189,6 +189,10 @@ h3 {
   display: none;
 }
 
+.display-block {
+  display: block;
+}
+
 .opacity-50 {
   opacity: 0.5;
 }
@@ -1092,6 +1096,11 @@ body.modal-open {
 }
 
 @media screen and (max-width: 767px) {
+
+  .xs-p16 {
+    padding: 16px;
+  }
+
   .xs-p24 {
     padding: 24px;
   }
