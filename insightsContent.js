@@ -34,14 +34,5 @@ var insightsContent = [
    tags: "#legaltech #tradesecrets #iplaw #intellectualproperty",
    extlink: "www.google.com/" ,
    link: "https://www.tangibly.com/insights/0001"
-  },
-  {
-   ID: 5,
-   title: "Examples of Trade Secrets",
-   body: "Success is built on the back of a lot of trial and error. Understanding what does NOT work is an important and valuable asset for your company and can be protected as a trade secret. It’s called Negative Know-How.",
-   channel: "linkedIn",
-   tags: "#legaltech #tradesecrets #iplaw #intellectualproperty",
-   extlink: "www.google.com/" ,
-   link: "https://www.tangibly.com/insights/0005"
   }
 ]
