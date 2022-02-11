@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Tangibly Manage</title>
+  <title>Tangibly</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -24,9 +24,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="fonts.css">
+  <script type="text/javascript" src="insightsContent.js"></script>
+  <script type="text/javascript" src="insights.js"></script>
 </head>
 
-<body>
+<body class="bg-fa">
 
   <section id="navbar" class="box-shadow-lg position-relative">
     <div class="container p12">
@@ -45,52 +47,18 @@
       </div>
     </div>
   </section>
-  <section class=" bg-ef">
-    <div class="container">
+  <section class="bg-white">
+    <div class="container pb64">
       <div class="row">
-        <div class="col-12 pt64  xs-font-32 font-72 text-center text-display">
-          <span><strong>TANGIBLY</strong></span>
-          <span class="text-tpurple">MANAGE</span> 
+        <div class="col-12 mt64 mb24 font-32">
+          <center>The Latest from Tangibly</center>
         </div>
-        <div class="col-12 pt40 font-24 text-center" style="padding-bottom: 160px">
-          <!-- Play the Video  -->
-        </div>
+      </div>
+      <div class="row" id="insights-container">
       </div>
     </div>
   </section>
-  <section style="margin-top: -88px;">
-    <div class="container">
-      <div class="row justify-content-md-center">
-        <div class="col-md-6 mb64">
-          <div class="box-shadow-lg bg-white border-radius-xl">  
-            <div class="p32 pb16 text-copy-1 d-flex flex-row">
-              <div class="font-21 pr16">
-                <i class="text-tpurple zmdi zmdi-tag"></i>
-              </div>
-              <div class="font-16"><strong class="text-tpurple">Label your assets</strong> as trade secret</div>
-            </div>
-            <div class="pl32 pr32 pb16 text-copy-1 d-flex flex-row">
-              <div class="font-21 pr16">
-                <i class="text-tpurple zmdi zmdi-accounts-list"></i>
-              </div>
-              <div class="font-16"><strong class="text-tpurple">Limit access </strong>on a need to know basis</div>
-            </div>
-            <div class="pl32 pr32 text-copy-1 d-flex flex-row">
-              <div class="font-21 pr16">
-                <i class="text-tpurple zmdi zmdi-info-outline"></i>
-              </div>
-              <div class="font-16"><strong class="text-tpurple">Inform</strong> employees and partners they have access to the company's trade secrets</div>
-            </div>
-            <div class="p32">
-              <a href="https://calendly.com/d/cg3-h22-93v/tangibly-demo?month=2021-12" class="btn text-white bg-tpurple w-100">
-                Book a Demo
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+
   <section class="bg-ef pb32" id="footer">
     <div class="container">
       <div class="row pt48">
@@ -118,4 +86,12 @@
       </div>      
     </div>
   </section>
+
+
 </body>
+
+<script type="text/javascript">
+
+  generateInsights('all');
+  
+</script>
