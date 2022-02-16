@@ -34,5 +34,41 @@ var insightsContent = [
    tags: "#legaltech #tradesecrets #iplaw #intellectualproperty",
    extlink: "www.google.com/" ,
    link: "https://www.tangibly.com/insights/0001"
+  },
+  {
+   ID: 5,
+   title: "What is a Trade Secret?",
+   body: "Learn the three basic criteria to protect an asset as a trade secret.",
+   channel: "linkedIn",
+   tags: "#legaltech #tradesecrets #iplaw #intellectualproperty",
+   extlink: "www.google.com/" ,
+   link: "https://www.tangibly.com/insights/0005"
+  },
+  {
+   ID: 6,
+   title: "How to Manage Your Trade Secrets",
+   body: "Learn what is required to manage your trade secrets. Tangibly makes it easy.",
+   channel: "linkedIn",
+   tags: "#legaltech #tradesecrets #iplaw #intellectualproperty",
+   extlink: "www.google.com/" ,
+   link: "https://www.tangibly.com/insights/0006"
+  },
+  {
+   ID: 7,
+   title: "Mergers and Acquisitions",
+   body: "Your trade secrets could make or break the sale of your company. Amplify the value with Tangibly.",
+   channel: "linkedIn",
+   tags: "#legaltech #tradesecrets #iplaw #intellectualproperty",
+   extlink: "www.google.com/" ,
+   link: "https://www.tangibly.com/insights/0007"
+  },
+  {
+   ID: 8,
+   title: "Trade Secrets and Partnerships",
+   body: "Sharing trade secrets is typical in most partnerships. Make sure yours are protected.",
+   channel: "linkedIn",
+   tags: "#legaltech #tradesecrets #iplaw #intellectualproperty",
+   extlink: "www.google.com/" ,
+   link: "https://www.tangibly.com/insights/0008"
   }
 ]
