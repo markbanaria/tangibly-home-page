@@ -1095,6 +1095,10 @@ body.modal-open {
   left: 0;
 }
 
+.border-left-white {
+  border-left: white 1px solid;
+}
+
 @media screen and (max-width: 767px) {
 
   .xs-p16 {
