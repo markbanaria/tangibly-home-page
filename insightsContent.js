@@ -7,7 +7,7 @@ var insightsContent = [
    linkedin: "linkedIn",
    tags: "#partnership #iplaw #intellectualproperty #tradesecrets #ip #supplychain",
    extlink: "" ,
-   link: "https://www.tangibly.com/videos/rapid-innovation-is-driving-demand-for-trade-secrets"
+   link: "https://www.tangibly.com/insights/rapid-innovation-is-driving-demand-for-trade-secrets"
   },
   {
    ID: 8,
