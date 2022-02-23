@@ -1,5 +1,15 @@
 var insightsContent = [
   {
+   ID: 10,
+   date: 'Feb 1, 2020',
+   title: "Rapid Innovation Is Driving Demand For Trade Secrets",
+   body: "The first US patent was awarded in 1790 fora method to produce potash, which was America’s first industrial chemical. The US Patent Office was created in 1802...",
+   linkedin: "linkedIn",
+   tags: "#partnership #iplaw #intellectualproperty #tradesecrets #ip #supplychain",
+   extlink: "" ,
+   link: "https://www.tangibly.com/videos/rapid-innovation-is-driving-demand-for-trade-secrets"
+  },
+  {
    ID: 8,
    date: 'Feb 1, 2020',
    title: "Trade Secrets and Partnerships",
