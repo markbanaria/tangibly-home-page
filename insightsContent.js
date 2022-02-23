@@ -3,7 +3,7 @@ var insightsContent = [
    ID: 10,
    date: 'Feb 1, 2020',
    title: "Rapid Innovation Is Driving Demand For Trade Secrets",
-   body: "The first US patent was awarded in 1790 fora method to produce potash, which was America’s first industrial chemical. The US Patent Office was created in 1802...",
+   body: "What do patents and free lunch have in common?? ✓ They are both strategic assets that help companies maintain a competitive edge. ✓ But unlike a free lunch that helps recruit and retain talent, patent portfolios of leading companies are like a big heavy hammer always at the ready to assert against your competition...",
    linkedin: "linkedIn",
    tags: "#innovation #ip #tradesecrets #intellectualproperty #patents",
    extlink: "https://www.linkedin.com/feed/update/urn:li:activity:6902129829223763968/" ,
