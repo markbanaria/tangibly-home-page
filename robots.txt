@@ -1,0 +1,8 @@
+User-agent: Googlebot
+Disallow: /nogooglebot/
+
+User-agent: *
+Allow: /
+Disallow: /tangibly-learn-enabled
+
+Sitemap: https://www.tangibly.com/sitemap.xml
