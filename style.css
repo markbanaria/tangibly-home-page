@@ -585,6 +585,14 @@ h3 {
   width: 24px;
 }
 
+.w-256 {
+  width: 256px;
+}
+
+.mxw360 {
+  max-width: 360px;
+}
+
 .inline-block {
   display: inline-block;
 }

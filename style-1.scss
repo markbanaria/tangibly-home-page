@@ -1,0 +1,43 @@
+$font-sizes: 14, 21, 24, 32, 40, 48, 56, 64;
+
+@each $size in $font-sizes {
+  .font-#{$size} {
+    font-size: $size + 'px';
+    line-height: $size + 8 + 'px';
+  }
+}
+
+$paddings-margins: 8, 16, 24, 32, 40, 48, 48, 56, 64, 72, 80, 88, 96, 104, 112;
+
+@each $size in $paddings-margins {
+  .p#{$size} {
+    padding: $size + 'px';
+  }
+  .pt#{$size} {
+    padding-top: $size + 'px';
+  }
+  .pb#{$size} {
+    padding-bottom: $size + 'px';
+  }
+  .pl#{$size} {
+    padding-left: $size + 'px';
+  }
+  .pr#{$size} {
+    padding-right: $size + 'px';
+  }
+  .m#{$size} {
+    margin: $size + 'px';
+  }
+  .mt#{$size} {
+    margin-top: $size + 'px';
+  }
+  .mb#{$size} {
+    margin-bottom: $size + 'px';
+  }
+  .ml#{$size} {
+    margin-left: $size + 'px';
+  }
+  .mr#{$size} {
+    margin-right: $size + 'px';
+  }
+}
