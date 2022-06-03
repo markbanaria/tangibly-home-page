@@ -1124,6 +1124,9 @@ body.modal-open {
   .xs-mb16 {
     margin-bottom: 16px;  }
 
+  .xs-mb32 {
+    margin-bottom: 32px;  }
+
   .xs-pt0 {
     padding-top:  0px;
   }
@@ -1151,6 +1154,11 @@ body.modal-open {
     line-height: 40px;
   }
 
+  .xs-font-48 {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
   .rolling-banner-header {
     margin-left: 0px;
   }
@@ -1172,6 +1180,33 @@ body.modal-open {
   max-height: 100vh;
   }
 
+  #banner-image {
+    padding-top: 112px!important;
+    padding-bottom: 32px!important;
+  }
+
+}
+
+@media screen and (max-width: 991px) {
+  #banner-image {
+    background-image: none!important;
+    background-color: #fafafa!important;
+    padding: 24px;
+  }
+
+  #product-store-share, 
+  #product-store-manage, 
+  #product-store-learn,
+  .bg-section-split {
+    background-image: none!important;
+    background-color: #fafafa!important;
+    padding: 40px 24px;
+    border-top:  1px solid #dcdcdc;
+  }
+
+  .homepage-section-split {
+    padding:  0!important;
+  }
 }
 
 @media screen and (min-width: 1200px) {
