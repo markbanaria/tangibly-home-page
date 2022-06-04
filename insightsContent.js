@@ -1,4 +1,25 @@
 var insightsContent = [
+
+  {
+   ID: 20,
+   date: 'June 4, 2022',
+   title: "Tim Londergan on LinkedIn: Trade secret protection in corporations: best practices",
+   body: "This should be required reading for all outside counsel wondering how they can help their clients protect their trade secrets. Excellent piece by Ian...",
+   source: "linkedIn",
+   tags: "#training #tradesecrets #iplaw #intellectualproperty #legaltech",
+   extlink: "https://www.linkedin.com/posts/timlondergan_trade-secret-protection-in-corporations-activity-6938546040736227328-W_Dd?utm_source=linkedin_share&utm_medium=member_desktop_web" ,
+   link: "https://www.tangibly.com/insights/timlondergan_trade-secret-protection-in-corporations"
+  },
+  {
+   ID: 19,
+   date: 'May 27, 2022',
+   title: "Tim Londergan on LinkedIn: Sacramento-based Propel Fuels Sues Phillips 66 Over Alleged Trade-Secrets",
+   body: "Cautionary tale of what can happen when you share your trade secrets as part of an acquisition due diligence....",
+   source: "linkedIn",
+   tags: "",
+   extlink: "https://www.linkedin.com/posts/timlondergan_sacramento-based-propel-fuels-sues-phillips-activity-6935612652547153921-9ula?utm_source=linkedin_share&utm_medium=member_desktop_web" ,
+   link: "https://www.tangibly.com/insights/timlondergan_sacramento-based-propel-fuels-sues-phillips-activity"
+  },
   {
    ID: 18,
    date: 'May 20, 2022',
