@@ -3,13 +3,22 @@
     <loc>https://www.tangibly.com/</loc>
   </url>
   <url>
-    <loc>https://www.tangibly.com/tangibly-share</loc>
+    <loc>https://www.tangibly.com/share</loc>
   </url>
   <url>
-    <loc>https://www.tangibly.com/tangibly-manage</loc>
+    <loc>https://www.tangibly.com/manage</loc>
   </url>
   <url>
     <loc>https://www.tangibly.com/insights</loc>
+  </url>
+  <url>
+    <loc>https://www.tangibly.com/usecases</loc>
+  </url>
+  <url>
+    <loc>https://www.tangibly.com/about</loc>
+  </url>
+  <url>
+    <loc>https://www.tangibly.com/faq</loc>
   </url>
   <url>
     <loc>https://www.tangibly.com/privacy</loc>
@@ -21,7 +30,7 @@
     <loc>https://www.tangibly.com/terms</loc>
   </url>
   <url>
-    <loc>https://www.tangibly.com/tangibly-learn</loc>
+    <loc>https://www.tangibly.com/learn</loc>
   </url>
   <url>
     <loc>https://www.tangibly.com/insights/0001</loc>

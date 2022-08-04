@@ -3,6 +3,6 @@ Disallow: /nogooglebot/
 
 User-agent: *
 Allow: /
-Disallow: /tangibly-learn-enabled
+Disallow: /learn-enabled
 
 Sitemap: https://www.tangibly.com/sitemap.xml
