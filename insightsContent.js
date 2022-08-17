@@ -1,6 +1,15 @@
 var insightsContent = [
 
   {
+   ID: 21,
+   date: 'August 8, 2022',
+   title: "Tim Londergan on LinkedIn: Economics and Management of Innovation at Duke University",
+   body: "Thank you to Sharon Belenzon for the opportunity to participate in Duke University - The Fuqua School of Business Summer School on the Economics and Management of Innovation...",
+   source: "linkedIn",
+   tags: "#intellectualproperty #iplaw #innovation #tradesecrets #ip",
+   extlink: "https://www.linkedin.com/posts/timlondergan_intellectualproperty-iplaw-innovation-activity-6959928291851976704-w4Fo/?utm_source=linkedin_share&utm_medium=member_desktop_web" ,
+   link: "https://www.tangibly.com/insights/economics-and-management-of-innovation"
+  },{
    ID: 20,
    date: 'June 4, 2022',
    title: "Tim Londergan on LinkedIn: Trade secret protection in corporations: best practices",
