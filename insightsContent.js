@@ -1,6 +1,15 @@
 var insightsContent = [
 
   {
+   ID: 22,
+   date: 'August 18, 2022',
+   title: "Tim Londergan on LinkedIn: Trade secrets are the most valuable IP assets companies own.",
+   body: "Thank you to Sharon Belenzon for the opportunity to participate in Duke University - The Fuqua School of Business Summer School on the Economics and Management of Innovation...",
+   source: "linkedIn",
+   tags: "#intellectualproperty #tradesecrets #ip",
+   extlink: "https://www.linkedin.com/posts/timlondergan_trade-secrets-are-more-important-than-trademarks-activity-6965698020348760065-jQnH?utm_source=linkedin_share&utm_medium=member_desktop_web" ,
+   link: "https://www.tangibly.com/insights/timlondergan_trades-secrets-more-important-that-trademarks"
+  },{
    ID: 21,
    date: 'August 8, 2022',
    title: "Tim Londergan on LinkedIn: Economics and Management of Innovation at Duke University",
