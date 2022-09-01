@@ -3,7 +3,7 @@ var insightsContent = [
   {
    ID: 22,
    date: 'August 18, 2022',
-   title: "Tim Londergan on LinkedIn: Trade secrets are the most valuable IP assets companies own.",
+   title: "Trade secrets are the most valuable IP assets companies own.",
    body: "Thank you to Sharon Belenzon for the opportunity to participate in Duke University - The Fuqua School of Business Summer School on the Economics and Management of Innovation...",
    source: "linkedIn",
    tags: "#intellectualproperty #tradesecrets #ip",
@@ -12,7 +12,7 @@ var insightsContent = [
   },{
    ID: 21,
    date: 'August 8, 2022',
-   title: "Tim Londergan on LinkedIn: Economics and Management of Innovation at Duke University",
+   title: "Economics and Management of Innovation at Duke University",
    body: "Thank you to Sharon Belenzon for the opportunity to participate in Duke University - The Fuqua School of Business Summer School on the Economics and Management of Innovation...",
    source: "linkedIn",
    tags: "#intellectualproperty #iplaw #innovation #tradesecrets #ip",
@@ -21,7 +21,7 @@ var insightsContent = [
   },{
    ID: 20,
    date: 'June 4, 2022',
-   title: "Tim Londergan on LinkedIn: Trade secret protection in corporations: best practices",
+   title: "Trade secret protection in corporations: best practices",
    body: "This should be required reading for all outside counsel wondering how they can help their clients protect their trade secrets. Excellent piece by Ian...",
    source: "linkedIn",
    tags: "#training #tradesecrets #iplaw #intellectualproperty #legaltech",
@@ -31,7 +31,7 @@ var insightsContent = [
   {
    ID: 19,
    date: 'May 27, 2022',
-   title: "Tim Londergan on LinkedIn: Sacramento-based Propel Fuels Sues Phillips 66 Over Alleged Trade-Secrets",
+   title: "Sacramento-based Propel Fuels Sues Phillips 66 Over Alleged Trade-Secrets",
    body: "Cautionary tale of what can happen when you share your trade secrets as part of an acquisition due diligence....",
    source: "linkedIn",
    tags: "",
