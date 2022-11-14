@@ -1,6 +1,16 @@
 var insightsContent = [
 
   {
+   ID: 23,
+   date: 'November 15, 2022',
+   title: "Trade Secrets - A Borderless Asset Contributing to Global Economic Growth and Development",
+   body: "As major portions of the global populationcontinue to transition to digital technologies, enterprises are increasingly at risk that their trade secret assets can be hacked, downloaded...",
+   source: "none",
+   tags: "#tradesecrets #economicgrowth #borerless",
+   extlink: "https://www.tangibly.com/insights/trade-secrets-a-borderless-asset-global-economic-growth-development" ,
+   link: "https://www.tangibly.com/insights/trade-secrets-a-borderless-asset-global-economic-growth-development"
+  },
+  {
    ID: 22,
    date: 'August 18, 2022',
    title: "Trade secrets are the most valuable IP assets companies own.",
